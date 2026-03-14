@@ -65,3 +65,16 @@ No image may be changed without a show-and-approve step first:
 - Hosting: [REPLACE]
 - Local path: [REPLACE]
 - Live URL: [REPLACE]
+
+---
+
+## New Project Check
+
+If this appears to be a brand new project with no existing files,
+ask Aaron before proceeding:
+
+"Is this a new coding project? If yes, I should set it up from your
+template at https://github.com/twobirds-kramerica/two-birds-project-template
+before we do anything else. Want me to handle that now?"
+
+Do not proceed with any coding work until Aaron confirms.
