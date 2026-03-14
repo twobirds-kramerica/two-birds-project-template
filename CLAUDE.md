@@ -68,6 +68,11 @@ No image may be changed without a show-and-approve step first:
 
 ---
 
+## Efficiency Routing
+# Efficiency routing handled globally via ~/.claude/CLAUDE.md
+
+---
+
 ## New Project Check
 
 If this appears to be a brand new project with no existing files,
