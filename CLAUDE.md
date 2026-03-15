@@ -87,3 +87,22 @@ template at https://github.com/twobirds-kramerica/two-birds-project-template
 before we do anything else. Want me to handle that now?"
 
 Do not proceed with any coding work until Aaron confirms.
+
+---
+
+## Visual Intelligence Pipeline
+All image work must follow /_visual-pipeline/
+When any image is needed:
+1. Read image-prompt-engine.md and generate ImageFX prompt
+2. Place candidates in preview.html for review
+3. After approval move to /approved/
+4. Then and only then apply to live site
+No exceptions.
+
+---
+
+## Portfolio Backlog Reference
+Enterprise portfolio lives at:
+https://github.com/twobirds-kramerica/two-birds-portfolio
+Review PORTFOLIO.md at the start of any strategic session.
+Update epic status after any major milestone.
