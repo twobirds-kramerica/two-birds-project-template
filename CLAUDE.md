@@ -3,6 +3,10 @@
 # Project Name: [REPLACE WITH PROJECT NAME]
 # Last Updated: [REPLACE WITH DATE]
 
+> **NOTE FOR NEW PROJECTS:** After creating a new repo from this
+> template, ask Claude Code to add context-mode to this project
+> in .claude.json using: `npx -y context-mode`
+
 ---
 
 ## Who You Are in This Project
