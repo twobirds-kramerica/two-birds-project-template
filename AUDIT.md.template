@@ -1,0 +1,140 @@
+# [PROJECT NAME] — HAL Stack Rigor Audit (TEMPLATE)
+
+**Audit date:** [YYYY-MM-DD]
+**Auditor:** [Claude Code / human]
+**Sprint:** [S-{PROJECT}-HYGIENE or other]
+**Repo state at audit:** [REPO-NAME] [branch] @ [commit-hash].
+
+> This file is a template. Replace [REPLACE] placeholders and delete
+> any sections that don't apply to the specific project.
+
+---
+
+## What this is
+
+[1-2 paragraphs: what the site/app does, who it serves, what it's built
+with, rough size (LoC / file count).]
+
+---
+
+## TL;DR — shipped this sprint
+
+| Fix | Why | Commit |
+|---|---|---|
+| [fix 1] | [reason] | [hash] |
+| [fix 2] | [reason] | [hash] |
+
+(Keep the table; delete rows not applicable.)
+
+---
+
+## 1. Accessibility
+
+Check against WCAG 2.0 + 2.1 A/AA via axe-core CI output (JSON artefact).
+
+### Shipped
+- [fix, or: "Nothing this sprint"]
+
+### Backlog
+- **Colour contrast** — verify via axe-core JSON report
+- **Keyboard navigation** — tab through all interactive elements
+- **Skip-link + `<main>` landmark** — baseline (may already be in the template starter)
+- **Form labels + aria** — every input has explicit label + id pairing
+- **Reduced-motion** — `@media (prefers-reduced-motion: reduce)` respected
+
+---
+
+## 2. Performance
+
+- File count + LOC per file
+- External resource counts (fonts, JS libraries, images)
+- Opportunities: self-host fonts, prompt caching (if AI app), lazy-loading images, inline critical CSS
+
+---
+
+## 3. Sovereignty (L1 → L4 float check)
+
+| Dependency | Current layer | Cost to drop |
+|---|---|---|
+| Hosting | [L1: GitHub Pages / Netlify / etc] | [min/h estimate] |
+| Fonts | [L1 external / L3 self-hosted / L4 system] | [cost] |
+| JS libraries | [L1 CDN / L3 self-hosted / L4 none] | [cost] |
+| Backend / API | [describe] | [cost] |
+
+**Verdict**: [L?-ready today; L? in under a day; would require X to reach Lmax].
+
+---
+
+## 4. Security & privacy
+
+- API keys / credentials location
+- Data collection / retention
+- Content Security Policy status
+- XSS / injection vectors
+
+---
+
+## 5. Code quality
+
+- Inline `onclick=` count (CSP-readiness signal)
+- Inline `<style>` vs external CSS
+- Dead code / orphan files
+- ES5 vs modern JS compatibility for target browser
+
+---
+
+## 6. CI / CD
+
+### Shipped
+- [axe-core.yml or other workflows]
+
+### Backlog
+- Broken-external-link check (mirror Kevin's `listing-availability.yml` pattern)
+- Lighthouse CI (when there's real traffic to baseline)
+- Playwright smoke / visual regression (if app is complex enough)
+
+---
+
+## 7. Positioning / conversion (opinion-ated)
+
+### What's working
+- [strengths]
+
+### Gaps
+- [gaps]
+
+### Recommendations
+- [recs]
+
+---
+
+## 8. Top 5 prioritised next actions
+
+Ranked by `impact × (1 / LOE)`:
+
+1. **[action]** ([LOE]). [why].
+2. **[action]** ([LOE]). [why].
+3. **[action]** ([LOE]). [why].
+4. **[action]** ([LOE]). [why].
+5. **[action]** ([LOE]). [why].
+
+---
+
+## 9. What this audit did NOT cover
+
+- Rendered-browser QA (unless done explicitly)
+- Real-user walkthrough
+- Competitive comparison
+- Real-device cross-browser test
+
+---
+
+## Confidence (overall)
+
+[X]%. [explainer].
+
+## Scrappy Pack says
+[one-sentence gut check from The Researcher / Why Not / Fifth Why / Ripper /
+Sovereignty Check].
+
+LOE total for Top 5: [time estimate].
